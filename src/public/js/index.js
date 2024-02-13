@@ -26,13 +26,13 @@ header.innerHTML = `
 </nav>`;
 
 footer.innerHTML = `
+<p class="tech_text">
+  <img src="/img/mysql.svg" />
+  <img src="/img/html5.svg" />
+  <img src="/img/css3.svg" />
+  <img src="/img/javascript.svg" />
+  <img src="/img/nodejs.svg" />
+</p>
   <p class="text1">App para registrar las ventas de <strong>Pinkylin Moda Intima</strong></p>
   <p class="text2">Creada por <strong>@CRKJ</strong> para Pinkylin Moda Intima 😎👍 ${version}</p>
-  <p class="tech_text">
-    <img src="/img/mysql.svg" />
-    <img src="/img/html5.svg" />
-    <img src="/img/css3.svg" />
-    <img src="/img/javascript.svg" />
-    <img src="/img/nodejs.svg" />
-  </p>
 `;

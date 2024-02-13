@@ -94,21 +94,27 @@
 
 /* Renta kid */
 .contenedor_superRenta{
-  position: absolute;
-  bottom:0;
-  right: calc(50% - 200px);
-  padding: .5em;
-  background-color: dodgerblue;
-  text-align: left;
-}
-.contenedorRenta{
   display: flex;
-  justify-content: left;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  padding: .2em 1em 0 0;
   background-color: dodgerblue;
   color: white;
-  }
-.contenedorRenta div{
+  justify-content: left;
+  text-align: left;
+  border-top: 5px solid lime;
+  border-left: 0px solid lime;
+  border-right: 0px solid lime;
+  border-bottom: 0px solid lime;
+  border-radius: 0 100em 0 0;
+}
+.contenedorRenta{
+  text-align: left;
   justify-content: right;
-  width: 130px;
-  margin: .3em 0;
+  min-width: 1em;
+  padding: 1em;
+}
+.contenedorRenta .formato{
+  text-align: left;
 }
