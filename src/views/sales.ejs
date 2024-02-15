@@ -63,10 +63,8 @@
           <% boldTotal += indice.quantity * indice.unit_price %>
         <% } else if (indice.payment_method == 'EFECTIVO') { %>
           <% efectivoTotal += indice.quantity * indice.unit_price %>
-        <% } %>
-        <% totales += indice.quantity * indice.unit_price %>
-      
-        <% }) %>
+          <% } %>
+        <% totales += indice.quantity * indice.unit_price %> <% }) %>
       </div>
     </section>
     
