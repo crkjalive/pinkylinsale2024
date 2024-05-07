@@ -19,9 +19,10 @@
         <div class="registroDay">
           <div class="fecha"><%= data.registered.toLocaleDateString('en-us', { weekday:"short", year:"numeric", month:"short", day:"numeric"}) %></div>
           <div class="prendas">
-            <span><%= data.prendas == 0 ? data.description+' ' : 'STOCK SOLD ' %></span>
+            <span><%= data.prendas == 0 ? data.description + ' ' : 'STOCK SOLD ' %></span>
             <%= data.prendas != 0 ? data.prendas : '' %></div>
-          <div class="valorColor totalVenta"><%= data.total %></div>
+            <div class="valorColor totalVenta"><%= data.total %></div>
+            <div style="display: none;" class="utilidadColor totalVenta"><%= data.utilidad %></div> 
         </div>
 
       <% }) %>
