@@ -15,7 +15,7 @@
 :root {
   --colorRojo: rgb(248, 32, 32);
   --colorAzul: dodgerblue;
-  --colorAzulOscuro: #0000c5;
+  --colorAzulOscuro: dodgerblue;
   --colorGris: #abaaaa;
   --colorGrisOscuro: #5e5e5e;
   --colorDorado: gold;
