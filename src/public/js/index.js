@@ -1,6 +1,10 @@
-console.log("%cNodeJS 2023", "font-size:2rem; color:lime;");
 
-const version = 2024
+const parametros = {
+  anio: 2024,
+}
+
+console.log(`%cNodeJS ${parametros.anio}`, "font-size:2rem; color:lime;");
+
 
 const header = document.getElementById("header_container");
 const footer = document.getElementById("footer_container");
@@ -8,7 +12,7 @@ const footer = document.getElementById("footer_container");
 header.innerHTML = `
 <nav class="nav_container">
   <ul>
-    <a href="/"><li>🍷${version}</li></a>
+    <a href="/"><li>🍷${parametros.anio}</li></a>
     <a href="/searchsales"><li>🏹</li></a>
     <a href="/sales/separado"><li>🛹Deptors</li></a>
     <a href="/sales"><li>🐾Registered</li></a>
@@ -34,5 +38,5 @@ footer.innerHTML = `
   <img src="/img/nodejs.svg" />
 </p>
 <p class="text1">App para registrar las ventas de <strong>Pinkylin Moda Intima</strong></p>
-<p class="text2">Creada por <strong>@CRKJ</strong> para Pinkylin Moda Intima 😎👍 ${version}</p>
+<p class="text2">Creada por <strong>@CRKJ</strong> para Pinkylin Moda Intima 😎👍 ${parametros.anio}</p>
 `;
