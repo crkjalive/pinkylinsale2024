@@ -7,7 +7,7 @@ const arriendo = 1857000 / 30;
 const puntoEquilibrio = sueldoBasico + arriendo;
 
 significadoColor.innerHTML = `
-  <div>Punto de equilibrio ${puntoEquilibrio}</div>
+  <div>${puntoEquilibrio}</div>
 `;
 
 for (let i = 0; i < utilidadColor.length; i++) {
@@ -20,7 +20,7 @@ for (let i = 0; i < utilidadColor.length; i++) {
   else if (utilidadColor[i].textContent <= arriendo) {
     valorColor[i].style.backgroundColor = "white";
     valorColor[i].style.color = "hotpink";
-    valorColor[i].style.border = "1px solid hotpink"; sueldoBasico + arriendo
+    valorColor[i].style.border = "1px solid hotpink";
   }
 
   else if (utilidadColor[i].textContent <= puntoEquilibrio) {
@@ -34,12 +34,12 @@ for (let i = 0; i < utilidadColor.length; i++) {
     valorColor[i].style.color = "white";
   }
 
-  else if (utilidadColor[i].textContent >= puntoEquilibrio * 2.06 && utilidadColor[i].textContent <= puntoEquilibrio * 3.9333) {
+  else if (utilidadColor[i].textContent >= puntoEquilibrio * 2.06 && utilidadColor[i].textContent <= puntoEquilibrio * 3.755) {
     valorColor[i].style.backgroundColor = "#1e6bff";
     valorColor[i].style.color = "white";
   }
 
-  else if (utilidadColor[i].textContent >= (puntoEquilibrio * 3.9333) && utilidadColor[i].textContent <= puntoEquilibrio * 6.71) {
+  else if (utilidadColor[i].textContent >= (puntoEquilibrio * 3.755) && utilidadColor[i].textContent <= puntoEquilibrio * 6.71) {
     valorColor[i].style.backgroundColor = "lime";
     valorColor[i].style.color = "black";
     valorColor[i].style.fontWeight = "bold";

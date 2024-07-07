@@ -25,7 +25,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Mynerve';
   font-family: 'Arial';
   outline: none;
 }
@@ -214,4 +213,7 @@ h2 {
 .stockStyle div{
   padding: .5em .5em 0 .5em ;
   font-size: 1.2rem;
+}
+.justifi{
+  justify-content: space-between;
 }
