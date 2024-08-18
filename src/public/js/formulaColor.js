@@ -1,14 +1,38 @@
 let valorColor = document.querySelectorAll(".valorColor");
 let utilidadColor = document.querySelectorAll(".utilidadColor");
 let significadoColor = document.querySelector("#significadoColor");
+let colorUno = document.querySelector("#coloruno");
+let colorDos = document.querySelector("#colordos");
+let colorTre = document.querySelector("#colortre");
+let colorCua = document.querySelector("#colorcua");
 
 const sueldoBasico = 50000;
 const arriendo = 1857000 / 30;
 const puntoEquilibrio = sueldoBasico + arriendo;
+const uno = puntoEquilibrio * 2.06
+const dos = puntoEquilibrio * 3.755
+const tre = puntoEquilibrio * 6.71
+const cua = puntoEquilibrio * 8.937
+
 
 significadoColor.innerHTML = `
   <div>${puntoEquilibrio}</div>
-`;
+`
+
+colorUno.innerHTML = `
+  <div>${uno}</div>
+`
+
+colorDos.innerHTML = `
+<div>${dos}</div>
+`
+
+colorTre.innerHTML = `
+<div>${tre}</div>
+`
+colorCua.innerHTML = `
+<div>${cua}</div>
+`
 
 for (let i = 0; i < utilidadColor.length; i++) {
   if (utilidadColor[i].textContent <= 1) {
