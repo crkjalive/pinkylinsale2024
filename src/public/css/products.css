@@ -3,7 +3,7 @@
 }
 .gridProducts{
   display: grid;
-  grid-template-columns: 4% 6% 7% 30% 8% 10% 10% 15% 5% 5%;
+  grid-template-columns: 6% 6% 6% 30% 8% 8% 8% 18% 5% 5%;
   grid-template-rows: auto;
   justify-content: center;
   align-content: center;
@@ -15,7 +15,9 @@
 }
 .stockSales{
   display: grid;
-  grid-template-columns: 10% 10% 50% 10% 10% 10%;
+  grid-template-columns: 10% 10% 40% 10% 10% 10% 10%;
+  justify-content: center;
+  align-content: center;
 }
 .stockSales:hover{
   background-color: dodgerblue;
