@@ -12,7 +12,8 @@ const getTotal = (req, res) => {
   sum(total_price) AS total, 
   sum((total_price) - (products.price * sales.quantity)) as utilidad,
   sum(quantity * price) as costo,
-  MONTHNAME(registered) AS mes FROM sales NATURAL join products 
+  MONTHNAME(registered) AS mes 
+  FROM sales NATURAL join products 
   GROUP BY mes ORDER BY registered`
 
   connection.query(sql, (err, result) => {

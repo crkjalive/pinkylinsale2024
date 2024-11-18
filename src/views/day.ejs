@@ -60,7 +60,7 @@
     <h3>Datos por rango de color</h3>
   </div>
   <section
-    style="display: flex; justify-content: space-between; margin: 1em 1em; border: 1px solid dodgerblue; border-radius: .5em; max-width: 60%;">
+    style="display: flex; justify-content: space-between; margin: 1em 1em; border: 1px solid dodgerblue; border-radius: .5em; max-width: 70%;">
 
 
     <div class=""
@@ -94,16 +94,26 @@
     </div>
 
     <div class=""
-      style="background-color: greenyellow; color: black; justify-self: flex-start;padding: .5em 1em; border-radius: .5em;">
-      <p class="forma"">GreenYellow</p>
+      style="background-color: yellow; color: rgb(0, 0, 0); justify-self: flex-start;padding: .5em 1em; border-radius: .5em;">
+      <p class="forma">YellowRent</p>
       <div class=" valorColor totalVenta">
-        <%= utilidades %>
-    </div>
+        <%= utilidades - 1857000 %>
+      </div>
     </div>
 
     <div class=""
+      style="background-color: rgb(159, 241, 35); color: black; justify-self: flex-start;padding: .5em 1em; border-radius: .5em;">
+      <p class="forma">GreenYellow</p>
+      <div class=" valorColor totalVenta">
+        <%= utilidades%>
+      </div>
+    </div>
+
+
+
+    <div class=""
       style="background-color: rgb(255, 136, 0); color: rgb(255, 255, 255); justify-self: flex-start;padding: .5em 1em; border-radius: .5em;">
-      <p class="forma">Total</p>
+      <p class="forma">FullMounth</p>
       <div class="valorColor totalVenta">
         <%= totales %>
       </div>
