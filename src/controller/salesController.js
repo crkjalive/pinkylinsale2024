@@ -10,6 +10,8 @@ const getSales = (req, res) => {
   FROM sales NATURAL JOIN products 
   ORDER BY registered DESC, id_sale DESC, reference ASC;`
 
+  /* limit 400, pero no me muestra completo renta anual */
+
   connection.query(sql, (err, result) => {
     if (err) { console.log("Error en la consulta: " + err); }
     else { res.render("sales", { sales: result }); }
